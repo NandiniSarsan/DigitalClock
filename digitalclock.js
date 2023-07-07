@@ -61,25 +61,25 @@ function clock()
     switch(day)
     {
         case 0:day="Sunday"
-            document.body.style.backgroundImage="url(./sun.jpg)"
+            document.body.style.backgroundImage="url(./0.jpg)"
         break;
         case 1:day="Monday"
-        document.body.style.backgroundImage="url(./mon.jpg)"
+        document.body.style.backgroundImage="url(./1.jpg)"
         break;
         case 2:day="Tuesday"
-        document.body.style.backgroundImage="url(./tue.jpg)"
+        document.body.style.backgroundImage="url(./2.jpg)"
         break;
         case 3:day="Wednesday"
-        document.body.style.backgroundImage="url(./wed.jpg)"
+        document.body.style.backgroundImage="url(./3.jpg)"
         break;
         case 4:day="Thursday"
-        document.body.style.backgroundImage="url(./thur.jpg)"
+        document.body.style.backgroundImage="url(./4.jpg)"
         break;
         case 5:day="Friday"
-        document.body.style.backgroundImage="url(./fri.jpg)"
+        document.body.style.backgroundImage="url(./5.jpg)"
         break;
         case 6:day="Saturday"
-        document.body.style.backgroundImage="url(./sat.jpg)"
+        document.body.style.backgroundImage="url(./6.jpg)"
     }
     document.getElementById("time").innerHTML=`${hh}:${mm} ${am_pm}`
     document.getElementById("date").innerHTML=`${dd}/${mo}/${yy}`
@@ -89,7 +89,7 @@ function clock()
 }
 clock()
 var audio=new Audio()
-audio.src="C:\Users\nandi\Desktop\web technologies\JavaScript\clock.mp3"
+audio.src="./clock.mp3"
 
 function alarmfunction()
 {
